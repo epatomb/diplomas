@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CLP Diplomas</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- datepicker -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<!-- Main Style Css -->
+	<!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div class="page-content" style="background-image: url('images/wizard-v3.jpg')">
+		<div class="wizard-v3-content">
+			<div class="wizard-form">
+				<div class="wizard-header">
+					<h3 class="heading">Unidad Educativa Particular "La Presentación"</h3>
+					<p>Generar diplomas</p>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							  <div class="navbar-nav">
+								<a class="nav-item nav-link active button" href="#seccion-primaria">Primaria</a>
+								<a class="nav-item nav-link" href="#seccion-secundaria">Secundaria</a>
+								<a class="nav-item nav-link" href="#seccion-mascotas">Mascotas</a>
+							  </div>
+							</div>
+					</nav>
+				</div>
+				
+				<div id="seccion-primaria">
+						<div class="wizard-header">
+								<p>Primaria</p>
+						</div>
+		        <form class="form-register" action="#" method="post">
+		        	<div id="form-total-primaria">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+			            	<span class="step-text">Instrucciones</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3>Información:</h3>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-face"></i></span>
+			            	<span class="step-text">Primaria</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3>Diploma primaria:</h3>
+			                	<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="nombresp" name="nombresp" required>
+											<span class="label">Nombres completos*</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<label for="cursop" class="special-label">Curso*:</label>
+										<select name="cursop" id="cursop">
+											<option value="Inicial II" selected>Inicial II</option>
+											<option value="Primero de básica">1ro de básica</option>
+											<option value="Segundo de básica">2do de básica</option>
+											<option value="Tercero de básica">3ro de básica</option>
+											<option value="Cuarto de básica">4to de básica</option>
+											<option value="Quinto de básica">5to de básica</option>
+											<option value="Sexto de básica">6to de básica</option>
+											<option value="Séptimo de básica">7mo de básica</option>
+										</select>
+									</div>
+								</div>
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+								<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+								<span class="step-text">Confirmar</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<h3>Confirmación:</h3>
+									<div class="form-row table-responsive">
+										<table class="table">
+											<tbody>
+												<tr class="space-row">
+													<th>Nombres Completos:</th>
+													<td id="fullnamep-val"></td>
+												</tr>
+												<tr class="space-row">
+													<th>Curso:</th>
+													<td id="cursop-val"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</section>
+		        	</div>
+				</form>
+				</div>
+
+				<div id="seccion-secundaria">
+						<div class="wizard-header">
+								<p>Secundaria</p>
+						</div>
+				<form class="form-register" action="#" method="post">
+						<div id="form-total-secundaria">
+							<!-- SECTION 1 -->
+							<h2>
+								<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+								<span class="step-text">Instrucciones</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<h3>Información:</h3>
+								</div>
+							</section>
+							<!-- SECTION 2 -->
+							<h2>
+								<span class="step-icon"><i class="zmdi zmdi-face"></i></span>
+								<span class="step-text">Secundaria</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<h3>Diploma secundaria:</h3>
+									<div class="form-row">
+										<div class="form-holder">
+											<label class="form-row-inner">
+												<input type="text" class="form-control" id="nombress" name="nombress" required>
+												<span class="label">Nombres completos*</span>
+												  <span class="border"></span>
+											</label>
+										</div>
+									</div>
+									<div class="form-row form-row-date">
+										<div class="form-holder form-holder-2">
+											<label for="cursop" class="special-label">Curso*:</label>
+											<select name="cursop" id="cursop">
+												<option value="Octavo de básica" selected>8vo de básica</option>
+												<option value="Noveno de básica">9no de básica</option>
+												<option value="Décimo de básica">10mo de básica</option>
+												<option value="Primero de bachillerato">1ro de bachillerato</option>
+												<option value="Segundo de bachillerato">2do de bachillerato</option>
+												<option value="Tercero de bachillerato">3ro de bachillerato</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- SECTION 3 -->
+							<h2>
+									<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+									<span class="step-text">Confirmar</span>
+								</h2>
+								<section>
+									<div class="inner">
+										<h3>Confirmación:</h3>
+										<div class="form-row table-responsive">
+											<table class="table">
+												<tbody>
+													<tr class="space-row">
+														<th>Nombres Completos:</th>
+														<td id="fullnames-val"></td>
+													</tr>
+													<tr class="space-row">
+														<th>Curso:</th>
+														<td id="cursos-val"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</section>
+						</div>
+					</form>
+				</div>
+
+				<div id="seccion-mascotas">
+						<div class="wizard-header">
+								<p>Mascotas</p>
+						</div>
+						<form class="form-register" action="#" method="post">
+								<div id="form-total-mascotas">
+									<!-- SECTION 1 -->
+									<h2>
+										<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+										<span class="step-text">Instrucciones</span>
+									</h2>
+									<section>
+										<div class="inner">
+											<h3>Información:</h3>
+										</div>
+									</section>
+									<!-- SECTION 2 -->
+									<h2>
+										<span class="step-icon"><i class="zmdi zmdi-face"></i></span>
+										<span class="step-text">Mascotas</span>
+									</h2>
+									<section>
+										<div class="inner">
+											<h3>Diploma mascotas:</h3>
+											<div class="form-row">
+												<div class="form-holder">
+													<label class="form-row-inner">
+														<input type="text" class="form-control" id="nombresm" name="nombresm" required>
+														<span class="label">Nombres completos*</span>
+														  <span class="border"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</section>
+									<!-- SECTION 3 -->
+									<h2>
+											<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+											<span class="step-text">Confirmar</span>
+										</h2>
+										<section>
+											<div class="inner">
+												<h3>Confirmación:</h3>
+												<div class="form-row table-responsive">
+													<table class="table">
+														<tbody>
+															<tr class="space-row">
+																<th>Nombres Completos:</th>
+																<td id="fullnamem-val"></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</section>
+								</div>
+							</form>
+						</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
