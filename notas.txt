@@ -20,3 +20,21 @@
                                         
         <form class="form-register" action="#" method="post">
 		        	<div id="form-total">
+
+
+
+					onFinishing:function(event, currentIndex){
+            console.log("hola");
+            return true;
+        }
+
+		$pdf->SetXY(300,210);
+$pdf->Cell(150,105,utf8_decode('Nombre'),"B",0,'C',0);
+
+
+$pdf=new FPDF();
+header("Content-Type: text/html; charset=iso-8859-1 ");
+$pdf->AddPage('L');
+$pdf->Image('../php/lib/fpdf/PlantillasDiplomas/1.jpg' , 0 ,0, 300, 210);
+$pdf->SetFont('Arial','B',16);
+$pdf->Output();

@@ -19,7 +19,14 @@ $(function(){
             $('#fullnamep-val').text(fullnamep);
             $('#cursop-val').text(fullcursop);
             return true;
+        },
+        onFinished: function(event, currentIndex){
+            $("#formulario-primaria").submit();
+            //console.log("hola");
+            //$("#formulario-primaria")[0].reset();
+            //return true;
         }
+        
     });
     $("#form-total-secundaria").steps({
         headerTag: "h2",
@@ -37,10 +44,16 @@ $(function(){
         },
         onStepChanging: function (event, currentIndex, newIndex) { 
             var fullnames = $('#nombress').val();
-            var fullcursos = $('#cursops').val();
+            var fullcursos = $('#cursos').val();
             $('#fullnames-val').text(fullnames);
             $('#cursos-val').text(fullcursos);
             return true;
+        },
+        onFinished: function(event, currentIndex){
+            $("#formulario-secundaria").submit();
+            //console.log("hola");
+            //$("#formulario-primaria")[0].reset();
+            //return true;
         }
     });
     $("#form-total-mascotas").steps({
@@ -61,6 +74,6 @@ $(function(){
             var fullnamem = $('#nombresm').val();
             $('#fullnamem-val').text(fullnamem);
             return true;
-        }
+        }        
     });
 });

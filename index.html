@@ -40,7 +40,7 @@
 						<div class="wizard-header">
 								<p>Primaria</p>
 						</div>
-		        <form class="form-register" action="#" method="post">
+		        <form class="form-register" action="../diplomas/php/diplomaBasica.php" method="post" id="formulario-primaria" name="formulario-primaria">
 		        	<div id="form-total-primaria">
 		        		<!-- SECTION 1 -->
 			            <h2>
@@ -74,13 +74,16 @@
 										<label for="cursop" class="special-label">Curso*:</label>
 										<select name="cursop" id="cursop">
 											<option value="Inicial II" selected>Inicial II</option>
-											<option value="Primero de básica">1ro de básica</option>
-											<option value="Segundo de básica">2do de básica</option>
-											<option value="Tercero de básica">3ro de básica</option>
-											<option value="Cuarto de básica">4to de básica</option>
-											<option value="Quinto de básica">5to de básica</option>
-											<option value="Sexto de básica">6to de básica</option>
-											<option value="Séptimo de básica">7mo de básica</option>
+											<option value="Primero">1ro de básica</option>
+											<option value="Segundo">2do de básica</option>
+											<option value="Tercero">3ro de básica</option>
+											<option value="Cuarto">4to de básica</option>
+											<option value="Quinto">5to de básica</option>
+											<option value="Sexto">6to de básica</option>
+											<option value="Séptimo">7mo de básica</option>
+											<option value="Octavo">8vo de básica</option>
+											<option value="Noveno">9no de básica</option>
+											<option value="Décimo">10mo de básica</option>
 										</select>
 									</div>
 								</div>
@@ -118,7 +121,7 @@
 						<div class="wizard-header">
 								<p>Secundaria</p>
 						</div>
-				<form class="form-register" action="#" method="post">
+				<form class="form-register" action="../diplomas/php/diplomaSecundaria.php" method="post" id="formulario-secundaria" name="formulario-secundaria">
 						<div id="form-total-secundaria">
 							<!-- SECTION 1 -->
 							<h2>
@@ -133,11 +136,11 @@
 							<!-- SECTION 2 -->
 							<h2>
 								<span class="step-icon"><i class="zmdi zmdi-face"></i></span>
-								<span class="step-text">Secundaria</span>
+								<span class="step-text">Bachillerato</span>
 							</h2>
 							<section>
 								<div class="inner">
-									<h3>Diploma secundaria:</h3>
+									<h3>Diploma Bachillerato:</h3>
 									<div class="form-row">
 										<div class="form-holder">
 											<label class="form-row-inner">
@@ -149,14 +152,11 @@
 									</div>
 									<div class="form-row form-row-date">
 										<div class="form-holder form-holder-2">
-											<label for="cursop" class="special-label">Curso*:</label>
-											<select name="cursop" id="cursop">
-												<option value="Octavo de básica" selected>8vo de básica</option>
-												<option value="Noveno de básica">9no de básica</option>
-												<option value="Décimo de básica">10mo de básica</option>
-												<option value="Primero de bachillerato">1ro de bachillerato</option>
-												<option value="Segundo de bachillerato">2do de bachillerato</option>
-												<option value="Tercero de bachillerato">3ro de bachillerato</option>
+											<label for="cursos" class="special-label">Curso*:</label>
+											<select name="cursos" id="cursos">
+												<option value="Primero" selected>1ro de bachillerato</option>
+												<option value="Segundo">2do de bachillerato</option>
+												<option value="Tercero">3ro de bachillerato</option>
 											</select>
 										</div>
 									</div>
