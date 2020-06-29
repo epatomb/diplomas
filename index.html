@@ -28,9 +28,8 @@
 							</button>
 							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 							  <div class="navbar-nav">
-								<a class="nav-item nav-link active button" href="#seccion-primaria">Primaria</a>
-								<a class="nav-item nav-link" href="#seccion-secundaria">Secundaria</a>
-								<a class="nav-item nav-link" href="#seccion-mascotas">Mascotas</a>
+								<a class="nav-item nav-link active button" href="#seccion-primaria">Básica Superior</a>
+								<a class="nav-item nav-link" href="#seccion-secundaria">Bachillerato</a>
 							  </div>
 							</div>
 					</nav>
@@ -38,7 +37,7 @@
 				
 				<div id="seccion-primaria">
 						<div class="wizard-header">
-								<p>Primaria</p>
+								<p>Básica Superior</p>
 						</div>
 		        <form class="form-register" action="../diplomas/php/diplomaBasica.php" method="post" id="formulario-primaria" name="formulario-primaria">
 		        	<div id="form-total-primaria">
@@ -49,17 +48,26 @@
 			            </h2>
 			            <section>
 			                <div class="inner">
-			                	<h3>Información:</h3>
+								<h3>Información:</h3>
+								<ol>
+									<li>Lea detenidamente las instrucciones.</li>
+									<li>Pulse el botón siguiente.</li>
+									<li>Ingrese el nombre completo del alumno.</li>
+									<li>Seleccione el curso correspondiente.</li>
+									<li>Pulse el botón siguiente y verifique que la información esté correcta.</li>
+									<li>Pulse el botón Generar Diploma.</li>
+									<li>Automaticamente descargará un archivo pdf que contiene el diploma.</li>
+								</ol>
 							</div>
 			            </section>
 						<!-- SECTION 2 -->
 			            <h2>
 			            	<span class="step-icon"><i class="zmdi zmdi-face"></i></span>
-			            	<span class="step-text">Primaria</span>
+			            	<span class="step-text">Superior</span>
 			            </h2>
 			            <section>
 			                <div class="inner">
-			                	<h3>Diploma primaria:</h3>
+			                	<h3>Diploma Secundaria:</h3>
 			                	<div class="form-row">
 									<div class="form-holder">
 										<label class="form-row-inner">
@@ -73,15 +81,7 @@
 									<div class="form-holder form-holder-2">
 										<label for="cursop" class="special-label">Curso*:</label>
 										<select name="cursop" id="cursop">
-											<option value="Inicial II" selected>Inicial II</option>
-											<option value="Primero">1ro de básica</option>
-											<option value="Segundo">2do de básica</option>
-											<option value="Tercero">3ro de básica</option>
-											<option value="Cuarto">4to de básica</option>
-											<option value="Quinto">5to de básica</option>
-											<option value="Sexto">6to de básica</option>
-											<option value="Séptimo">7mo de básica</option>
-											<option value="Octavo">8vo de básica</option>
+											<option value="Octavo" selected>8vo de básica</option>
 											<option value="Noveno">9no de básica</option>
 											<option value="Décimo">10mo de básica</option>
 										</select>
@@ -119,7 +119,7 @@
 
 				<div id="seccion-secundaria">
 						<div class="wizard-header">
-								<p>Secundaria</p>
+								<p>Bachillerato</p>
 						</div>
 				<form class="form-register" action="../diplomas/php/diplomaSecundaria.php" method="post" id="formulario-secundaria" name="formulario-secundaria">
 						<div id="form-total-secundaria">
@@ -131,6 +131,15 @@
 							<section>
 								<div class="inner">
 									<h3>Información:</h3>
+									<ol>
+										<li>Lea detenidamente las instrucciones.</li>
+										<li>Pulse el botón siguiente.</li>
+										<li>Ingrese el nombre completo del alumno.</li>
+										<li>Seleccione el curso correspondiente.</li>
+										<li>Pulse el botón siguiente y verifique que la información esté correcta.</li>
+										<li>Pulse el botón Generar Diploma.</li>
+										<li>Automaticamente descargará un archivo pdf que contiene el diploma.</li>
+									</ol>
 								</div>
 							</section>
 							<!-- SECTION 2 -->
@@ -189,65 +198,6 @@
 						</div>
 					</form>
 				</div>
-
-				<div id="seccion-mascotas">
-						<div class="wizard-header">
-								<p>Mascotas</p>
-						</div>
-						<form class="form-register" action="#" method="post">
-								<div id="form-total-mascotas">
-									<!-- SECTION 1 -->
-									<h2>
-										<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
-										<span class="step-text">Instrucciones</span>
-									</h2>
-									<section>
-										<div class="inner">
-											<h3>Información:</h3>
-										</div>
-									</section>
-									<!-- SECTION 2 -->
-									<h2>
-										<span class="step-icon"><i class="zmdi zmdi-face"></i></span>
-										<span class="step-text">Mascotas</span>
-									</h2>
-									<section>
-										<div class="inner">
-											<h3>Diploma mascotas:</h3>
-											<div class="form-row">
-												<div class="form-holder">
-													<label class="form-row-inner">
-														<input type="text" class="form-control" id="nombresm" name="nombresm" required>
-														<span class="label">Nombres completos*</span>
-														  <span class="border"></span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</section>
-									<!-- SECTION 3 -->
-									<h2>
-											<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
-											<span class="step-text">Confirmar</span>
-										</h2>
-										<section>
-											<div class="inner">
-												<h3>Confirmación:</h3>
-												<div class="form-row table-responsive">
-													<table class="table">
-														<tbody>
-															<tr class="space-row">
-																<th>Nombres Completos:</th>
-																<td id="fullnamem-val"></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</section>
-								</div>
-							</form>
-						</div>
 			</div>
 		</div>
 	</div>
