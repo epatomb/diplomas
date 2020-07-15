@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CLP Diplomas</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- datepicker -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<!-- Main Style Css -->
+	<!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div class="page-content" style="background-image: url('images/wizard-v3.jpg')">
+		<div class="wizard-v3-content">
+			<div class="wizard-form">
+				<div class="wizard-header">
+					<h3 class="heading">Unidad Educativa Particular "La Presentación"</h3>
+					<p>Generar diplomas</p>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							  <div class="navbar-nav">
+								<a class="nav-item nav-link active button" href="#seccion-primaria">Básica Superior</a>
+								<a class="nav-item nav-link" href="#seccion-secundaria">Bachillerato</a>
+							  </div>
+							</div>
+					</nav>
+				</div>
+				
+				<div id="seccion-primaria">
+						<div class="wizard-header">
+								<p>Básica Superior</p>
+						</div>
+		        <form class="form-register" action="../diplomas/php/diplomaBasica.php" method="post" id="formulario-primaria" name="formulario-primaria">
+		        	<div id="form-total-primaria">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+			            	<span class="step-text">Instrucciones</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+								<h3>Información:</h3>
+								<ol>
+									<li>Lea detenidamente las instrucciones.</li>
+									<li>Pulse el botón siguiente.</li>
+									<li>Ingrese el nombre y apellido del alumno.</li>
+									<li>Seleccione el curso correspondiente.</li>
+									<li>Pulse el botón siguiente y verifique que la información esté correcta.</li>
+									<li>Pulse el botón Generar Diploma.</li>
+									<li>Automaticamente descargará un archivo pdf que contiene el diploma.</li>
+								</ol>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-face"></i></span>
+			            	<span class="step-text">Superior</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3>Diploma Secundaria:</h3>
+			                	<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="nombresp" name="nombresp" required>
+											<span class="label">Nombre y apellido*</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<label for="cursop" class="special-label">Curso*:</label>
+										<select name="cursop" id="cursop">
+											<option value="Octavo" selected>8vo de básica</option>
+											<option value="Noveno">9no de básica</option>
+											<option value="Décimo">10mo de básica</option>
+										</select>
+									</div>
+								</div>
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+								<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+								<span class="step-text">Confirmar</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<h3>Confirmación:</h3>
+									<div class="form-row table-responsive">
+										<table class="table">
+											<tbody>
+												<tr class="space-row">
+													<th>Nombres Completos:</th>
+													<td id="fullnamep-val"></td>
+												</tr>
+												<tr class="space-row">
+													<th>Curso:</th>
+													<td id="cursop-val"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</section>
+		        	</div>
+				</form>
+				</div>
+
+				<div id="seccion-secundaria">
+						<div class="wizard-header">
+								<p>Bachillerato</p>
+						</div>
+				<form class="form-register" action="../diplomas/php/diplomaSecundaria.php" method="post" id="formulario-secundaria" name="formulario-secundaria">
+						<div id="form-total-secundaria">
+							<!-- SECTION 1 -->
+							<h2>
+								<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+								<span class="step-text">Instrucciones</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<h3>Información:</h3>
+									<ol>
+										<li>Lea detenidamente las instrucciones.</li>
+										<li>Pulse el botón siguiente.</li>
+										<li>Ingrese el nombre y apellido del alumno.</li>
+										<li>Seleccione el curso correspondiente.</li>
+										<li>Pulse el botón siguiente y verifique que la información esté correcta.</li>
+										<li>Pulse el botón Generar Diploma.</li>
+										<li>Automaticamente descargará un archivo pdf que contiene el diploma.</li>
+									</ol>
+								</div>
+							</section>
+							<!-- SECTION 2 -->
+							<h2>
+								<span class="step-icon"><i class="zmdi zmdi-face"></i></span>
+								<span class="step-text">Bachillerato</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<h3>Diploma Bachillerato:</h3>
+									<div class="form-row">
+										<div class="form-holder">
+											<label class="form-row-inner">
+												<input type="text" class="form-control" id="nombress" name="nombress" required>
+												<span class="label">Nombre y apellido*</span>
+												  <span class="border"></span>
+											</label>
+										</div>
+									</div>
+									<div class="form-row form-row-date">
+										<div class="form-holder form-holder-2">
+											<label for="cursos" class="special-label">Curso*:</label>
+											<select name="cursos" id="cursos">
+												<option value="Primero" selected>1ro de bachillerato</option>
+												<option value="Segundo">2do de bachillerato</option>
+												<option value="Tercero">3ro de bachillerato</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- SECTION 3 -->
+							<h2>
+									<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+									<span class="step-text">Confirmar</span>
+								</h2>
+								<section>
+									<div class="inner">
+										<h3>Confirmación:</h3>
+										<div class="form-row table-responsive">
+											<table class="table">
+												<tbody>
+													<tr class="space-row">
+														<th>Nombres Completos:</th>
+														<td id="fullnames-val"></td>
+													</tr>
+													<tr class="space-row">
+														<th>Curso:</th>
+														<td id="cursos-val"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</section>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
